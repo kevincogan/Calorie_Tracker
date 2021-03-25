@@ -1,0 +1,207 @@
+#logo img {
+   width: 100%;
+   height: 100%;
+}
+
+.container1 {
+  padding-left: 28%;
+  clear: both;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 100%;
+padding: 10px;
+height: 300px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+float: left;
+width: 33.33%;
+padding: 10px;
+height: 80%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column2 {
+float: left;
+width: 50%;
+padding: 10px;
+height: 300px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column3 {
+float: left;
+width: 50%;
+text-align: center;
+padding: 10px;
+height: 100px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column4 {
+float: left;
+width: 100%;
+text-align: center;
+padding: 10px;
+height: 100px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column5 {
+float: left;
+width: 50%;
+text-align: center;
+padding: 10px;
+height: 100px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+content: "";
+display: table;
+clear: both;
+padding-bottom: 50px;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The style of the popup bubble */
+.popup .popuptext {
+  visibility: hidden;
+  width: 190px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow on the popup bubble */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Animation fade in timing for the popup when activated*/
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.85s;
+  animation: fadeIn 0.85s;
+}
+
+/* Starting to end opacity when pop up activated */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Starting to end opacity when pop up activated */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* These display the summarised text upon loading the page */
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+
+/* Default to these fonts if Google 'Raleway' is not compatible  */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+/* Default font size */
+body {font-size: 16px;}
+
+/* Positioning and sizing the image in the slideshow carousel */
+img {
+  padding-top: 20px;
+  background-position: center;
+  background-size: cover;
+  max-height:1000px }
+
+/* When moving along the page it creates a smooth scroll transition from one section of the page to another */
+html {
+  scroll-behavior: smooth;
+}
+
+/* When the mouse is hovering over an element the cursor will become a pointer  */
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+
+/* Adds font styling */
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", sans-serif
+}
+
+/* Adding default height and line-height for text. */
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Applying padding to the contact form section */
+.contact_container {
+  padding-left: 25%;
+  padding-right: 25%;
+  clear: both;
+}
+
+/* Centering the send button in the contact form in the Contact Section */
+.send_button {
+  text-align: center;
+}
+
+/* Adds padding to elements in the Navbar and to the buttons on this page. */
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("static/image/macbook4.png");
+  min-height: 100%;
+}
+
+
+.w3-hover-theme1:hover {color:#fff !important; background-color:#343b7f !important}
+.w3-hover-theme2:hover {color:#fff !important; background-color:#2a52b2 !important}
+.w3-theme3 {color:#fff !important; background-color:#245ad5 !important}
+.w3-hover-theme3:hover {color:#fff !important; background-color:#245ad5 !important}
+.w3-hover-theme4:hover {color:#fff !important; background-color:#1474c2 !important}
+.w3-hover-theme5:hover {color:#fff !important; background-color:#0781d5 !important}
+.w3-hover-theme:hover {color:#fff !important; background-color:#1e234a !important}

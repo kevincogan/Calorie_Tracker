@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#FF8426</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="test1">#00B4D8</color>
+    <color name="test2">#48CAE4</color>
+    <color name="test3">#0096C7</color>
+    <color name="test4">#90E0EF</color>
+
+    <color name="protein1">#F63C67</color>
+    <color name="protein2">#C30934</color>
+    <color name="protein3">#F86285</color>
+
+
+    <color name="carbs1">#FFE570</color>
+    <color name="carbs2">#FFD20A</color>
+
+    <color name="fat1">#51CDBE</color>
+    <color name="fat2">#71D6CA</color>
+    <color name="fat3">#A0E3DC</color>
+
+</resources>

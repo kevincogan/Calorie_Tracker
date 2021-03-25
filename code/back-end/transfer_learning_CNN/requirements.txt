@@ -1,0 +1,12 @@
+matplotlib==3.2.2
+matplotlib-venn==0.11.6
+
+tensorflow==2.4.1
+tensorflow-datasets==4.0.1
+tensorflow-estimator==2.4.0
+tensorflow-gcs-config==2.4.0
+tensorflow-hub==0.11.0
+tensorflow-metadata==0.28.0
+tensorflow-probability==0.12.1
+
+numpy==1.19.5

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title> Kevin's Profile</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../image/macbook1.png");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.w3-hover-theme1:hover {color:#fff !important; background-color:#343b7f !important}
+.w3-hover-text-theme1:hover {color:#343b7f !important}
+.w3-hover-border-theme1:hover {border-color:#343b7f !important}
+
+.w3-hover-theme2:hover {color:#fff !important; background-color:#2a52b2 !important}
+.w3-hover-text-theme2:hover {color:#2a52b2 !important}
+.w3-hover-border-theme2:hover {border-color:#2a52b2 !important}
+
+.w3-hover-theme3:hover {color:#fff !important; background-color:#245ad5 !important}
+.w3-hover-text-theme3:hover {color:#245ad5 !important}
+.w3-hover-border-theme3:hover {border-color:#245ad5 !important}
+
+.w3-hover-theme4:hover {color:#fff !important; background-color:#1474c2 !important}
+.w3-hover-text-theme4:hover {color:#1474c2 !important}
+.w3-hover-border-theme4:hover {border-color:#1474c2 !important}
+
+.w3-hover-theme5:hover {color:#fff !important; background-color:#0781d5 !important}
+.w3-hover-text-theme5:hover {color:#0781d5 !important}
+.w3-hover-border-theme5:hover {border-color:#0781d5 !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#1e234a !important}
+.w3-hover-text-theme:hover {color:#1e234a !important}
+.w3-hover-border-theme:hover {border-color:#1e234a !important}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-text-blue w3-card" id="myNavbar">
+    <a href="../../" class="w3-bar-item w3-button w3-hover-theme w3-wide">PHAZE</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../../#about" class="w3-bar-item w3-button w3-hover-theme1">ABOUT</a>
+      <a href="../../#team" class="w3-bar-item w3-button w3-hover-theme2"><i class="fa fa-user"></i> TEAM</a>
+      <a href="../../#work" class="w3-bar-item w3-button w3-hover-theme3"><i class="fa fa-th"></i> WORK</a>
+      <a href="../../#pricing" class="w3-bar-item w3-button w3-hover-theme4"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="../../#contact" class="w3-bar-item w3-button w3-hover-theme5"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="https://chrome.google.com/webstore/category/extensions" class="w3-bar-item w3-button w3-hover-opacity w3-hover-blue
+      w3-hover-text-white w3-blue" style=""><i class="fas fa-download"></i> DOWNLOAD NOW</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-blue w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="https://chrome.google.com/webstore/category/extensions" onclick="w3_close()" class="w3-bar-item w3-button">DOWNLOAD</a>
+</nav>
+
+<!-- Page Container -->
+<div class="w3-content" style="max-width:1400px; margin-top: 6%">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="../image/kevin.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-blue">
+            <h2>Kevin Cogan</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>CEO & Founder</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Dublin, Ireland</p>
+          <p><em class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></em>kevincogan@phaze</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>1224435534</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</b></p>
+          <p>Programming</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>
+          </div>
+          <p>Marketing</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:80%">
+              <div class="w3-center w3-text-white">80%</div>
+            </div>
+          </div>
+          <p>Social Awareness</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:75%">75%</div>
+          </div>
+          <p>Media Production</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:70%">70%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarg w3-center">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:100%">100%</div>
+          </div>
+          <p>French</p>
+          <div class="w3-light-grey w3-round-xlarge w3-center">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:90%">90%</div>
+          </div>
+          <p>Irish</p>
+          <div class="w3-light-grey w3-round-xlarge w3-center">
+            <div class="w3-round-xlarge w3-blue" style="height:24px;width:80%">80%</div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-heart fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>My Passion</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Why I Am On The Phaze Team ?</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2016 - <span class="w3-tag w3-blue w3-round">Present Date</span></h6>
+          <p>I have alwasy been passionate about health and fitness as it is good for the body and the mind. Although I understand that staying fit and health is not easy all the time so when I had the opportunity to tackle this problem I was delighted to get involved. If the work of the Phaze team can make a difference in one person's life we will happy with our work.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Events Manager / Euro Languages Colleges</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2017 - August 2017</h6>
+          <p>Euro Languages College is a summer camp for children from the age of 13 to 17 where they are immersed in a french speaking environment. My role was to look after the well being of the children and to organise fun afternoon events for the children which was all conducted through french.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Tax Consultant Assistant / KPMG </b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2017 - June 2017</h6>
+          <p>I assisted with clients accounts.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Marketing Team / Stein Study</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2016 - September 2016</h6>
+          <p>I worked on developing marketing strategies to sell the summer camp programs offered by Stein Study to its target market. </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> Dublin City University</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2022</h6>
+          <p>Bachelor of Science - BSc, Computer Science</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Alliance Francaise Dublin</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
+          <p>DELF B1 - Passed</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Alliance Francaise Dublin</b></h5>
+          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+          <p>DELF A1 - Passed</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-blue w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.dyslex.ie" target="_blank">Phaze</a></p>
+</footer>
+
+</body>
+</html>

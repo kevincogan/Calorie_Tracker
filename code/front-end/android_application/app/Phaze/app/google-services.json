@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "781652260755",
+    "project_id": "phaze-b32ab",
+    "storage_bucket": "phaze-b32ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781652260755:android:e900e9ec983a324dd05a66",
+        "android_client_info": {
+          "package_name": "com.example.phaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781652260755-m1lgutfrtd45pvqenv4si2mo8175qjq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phaze",
+            "certificate_hash": "d550a4f23d4d1ccbfa361dd563fc562a839b3542"
+          }
+        },
+        {
+          "client_id": "781652260755-43mpd2u4tjvcotl7h463ha46tenkcogm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7d6Po2E-Ab9mC_iZwLbwrxBN1dYgon3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781652260755-43mpd2u4tjvcotl7h463ha46tenkcogm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

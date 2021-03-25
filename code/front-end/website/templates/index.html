@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Phaze</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Style sheet for the W3css library -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> <!-- Style sheet for imported Google font 'Raleway' -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Style sheet for the the imported icons -->
+<link rel="stylesheet"  type = "text/css" href="../static/style/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Style sheet for the the imported icons from Google -->
+
+<style>
+.slideshow_images img {
+   width: 100%;
+   height: 100%;
+}
+</style>
+
+<body class="w3-content w3-white" style="max-width:100%;">
+
+<!-- Navbar at the top -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-text-blue w3-card" id="myNavbar">
+
+    <!-- left-side navbar link -->
+    <a href="#home" class="w3-bar-item w3-button w3-hover-theme w3-wide">PHAZE</a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-hover-theme1">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button w3-hover-theme2"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#privacy" class="w3-bar-item w3-button w3-hover-theme3"><i class="fa fa-lock"></i> PRIVACY</a>
+      <a href="#pricing" class="w3-bar-item w3-button w3-hover-theme4"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-theme5"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="/web_register" class="w3-bar-item w3-button w3-hover-opacity w3-hover-blue w3-hover-text-white w3-blue" style=""><i class="fa fa-sign-in"></i> LOGIN/SIGN UP</a>
+    </div>
+
+
+    <!-- When screen is small treplace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-blue w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-hover-theme">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme1">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme2"><i class="fa fa-user"></i> TEAM</a>
+  <a href="#privacy" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme3"><i class="fa fa-lock"></i> PRIVACY</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme4"><i class="fa fa-usd"></i> PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme5"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="/web_register" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme5"><i class="fa fa-sign-in"></i> LOGIN/SIGN UP</a>
+</nav>
+
+<!-- Header with full-height image and slideshow -->
+<header class="w3-display-container w3-center" id="home">
+  <button class="w3-button w3-block w3-blue w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Download <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides w3-animate-opacity">
+
+    <!-- First image on the slideshow -->
+    <div class="slideshow_images">
+      <img class="w3-image" src="static/image/laptop_phone.jpg" alt="This is an image of a laptop with the Phaze logo on the screen of the laptop and a mobile phone displaying the microneutritients of a given food." style="min-width:50px">
+    </div>
+
+    <!-- This is a badge information section that is place over the image that has information about the application and a download button. -->
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:29%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large w3-hover-blue">
+        <h1 class="w3-xlarge">Find Fitness At Your Finger Tips </h1>
+        <hr class="w3-opacity">
+        <p>Super simple installment</p>
+
+          <!-- This is the link to download the mobile application. -->
+         <a href="https://forms.gle/y4DtNv7XZoxDXXvF9" class="w3-button w3-block w3-theme3 w3-round w3-hover-theme4" onclick="document.getElementById('https://forms.gle/y4DtNv7XZoxDXXvF9').style.display='block'" style=""><i class="fa fa-google"></i> Download Now</a>
+
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+
+    <!-- This is the second image in the sildeshow. -->
+    <div class="slideshow_images">
+      <img class="w3-image" src="static/image/food_idetifier_image.jpg" alt="This is an image with two mobile phones side by side. The phone on the left has is taking a picture of pineapple and cream dish while the phone on the right is showing the microneutritient information of that dish." style="min-width:50px">
+    </div>
+    <!-- This is a badge information section that is place over the image that has information about the application and a download button. -->
+    <div class="w3-display-bottomleft w3-padding w3-hide-small" style="width:29%; margin-bottom: 8%">
+      <div class="w3-blue w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large w3-margin-bottom">
+        <h1 class="w3-xlarge w3-text-white">Food Identifier Feature</h1>
+        <hr class="w3-opacity">
+        <p>This feature identies the microneutritient of any food with a simple photo</p>
+
+          <!-- This is the link to download the mobile application. -->
+         <a href="https://forms.gle/y4DtNv7XZoxDXXvF9" class="w3-button w3-block w3-white w3-round w3-hover-black" onclick="document.getElementById('https://forms.gle/y4DtNv7XZoxDXXvF9').style.display='block'" style=""><i class="fa fa-google"></i> Download Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides w3-animate-opacity">
+
+    <!-- This is the third image in the sildeshow. -->
+    <div class="slideshow_images">
+      <img class="w3-image" src="static/image/running_image.jpg" alt="This is an image of a phone with the foot step tracker on it. The background had people running." style="min-width:50px">
+    </div>
+
+    <!-- This is a badge information section that is place over the image that has information about the application and a download button. -->
+    <div class="w3-display-bottomleft w3-padding w3-hide-small" style="width:29%; margin-bottom: 8%">
+      <div class="w3-blue w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large w3-margin-bottom">
+        <h1 class="w3-xlarge w3-text-white">Track The Calories You Burn</h1>
+        <hr class="w3-opacity">
+        <p>Our footstep counter will calculated the calories you burn each day</p>
+
+        <!-- This is the link to download the application. -->
+        <a href="https://forms.gle/y4DtNv7XZoxDXXvF9" class="w3-button w3-block w3-white w3-round w3-hover-black" onClick="document.getElementById('https://forms.gle/y4DtNv7XZoxDXXvF9').style.display='block'"><em class="fa fa-google"></em> Download Now</a></div>
+    </div>
+  </div>
+
+  <!-- This is the next button to change to the next slide when the button is pressed. -->
+  <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-theme3 w3-border w3-border-blue" onclick="plusDivs(1)">Take A Tour <i class="fa fa-angle-right"></i></a>
+  <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take A Tour <i class="fa fa-angle-right"></i></a>
+
+
+
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large w3-text-blue">Key features of our Phaze</p>
+  <p class="w3-center w3-large"> Phaze is an <b>award winning</b> mobile application that helps to <b>allieviate</b> the problem of <b>obesity</b> by making nutritional information more accessible</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+
+    <!-- Design section -->
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-text-blue w3-jumbo"></i>
+      <p class="w3-large w3-text-blue">Design</p>
+      <!-- Paragraph with read more extension function -->
+      <p>We have designed software that is tailored to the needs of user.<span id="dots">...</span><span id="more">After conducting vigourous needs assesment with user we have identified the the features that will help users achieve their Phaze fitness goals</span></p>
+        <button class="w3-button w3-blue w3-hover-theme3" onclick="myFunction()" id="myBtn">Read more</button>
+        <br><br>
+      </div>
+
+    <!-- Passion Section -->
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-text-blue w3-jumbo"></i>
+      <p class="w3-large w3-text-blue">Passion</p>
+      <p class="w3-text-black"> We are passionate to tackle growing problem of obesity.
+        <!-- Paragraph with read more extension function -->
+        <span id="dots1">...</span><span id="more1">  Over the last 30 years obesity in Ireland has trebled. At Phaze we are working towards alleviating this problem throught the use of technology</span></p>
+        <button class="w3-button w3-blue w3-hover-theme3" onclick="myFunction1()" id="myBtn1">Read more</button>
+        <br><br>
+    </div>
+
+    <!-- Technology Section -->
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-text-blue w3-jumbo w3-center"></i>
+      <p class="w3-large w3-text-blue">Technology</p>
+      <!-- Paragraph with read more extension function -->
+      <p>We wanted to leverage the use of advanced technology <span id="dots2">...</span><span id="more2"> to easily enable our users to achieve their fitness goals in a fun, effortless way</span></p>
+      <button class="w3-button w3-blue w3-hover-theme3" onclick="myFunction2()" id="myBtn2">Read more</button>
+    </div>
+
+    <!-- Support Section -->
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-text-blue w3-jumbo"></i>
+      <p class="w3-large w3-text-blue">Support</p>
+      <!-- Paragraph with read more extension function -->
+      <p>Phaze is always here to support you. Our software is here to support your<span id="dots3">...</span><span id="more3">fitness needs and our dedicated Phaze team will be happy deal with any other issue that may araise</span></p>
+      <button class="w3-button w3-blue w3-hover-theme3" onclick="myFunction3()" id="myBtn3">Read more</button>
+    </div>
+  </div>
+</div>
+
+<!-- Statistics Section -->
+<div class="w3-container w3-row w3-center w3-blue w3-padding-64">
+  <!-- First part -->
+  <div class="w3-third">
+    <span class="w3-xxlarge">100,000+</span>
+    <br>Hours Invested
+  </div>
+
+  <!-- Second part -->
+  <div class="w3-third">
+    <span class="w3-xxlarge">120+</span>
+    <br>People Empowered
+  </div>
+
+  <!-- Third part -->
+  <div class="w3-third">
+    <span class="w3-xxlarge">5</span>
+    <br>Awards Won
+  </div>
+</div>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+
+  <!-- Section header -->
+  <h3 class="w3-center">THE TEAM</h3>
+
+  <!-- Section sub-heading -->
+  <p class="w3-center w3-text-blue w3-large">The ones who runs this company</p>
+
+  <!-- Personal Profiles -->
+  <div class="w3-row-padding" style="margin-top:64px">
+
+    <!-- Kevin Cogan Section -->
+    <div class="w3-col l6 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="static/image/kevin_cogan.jpg" alt="Image of Kevin Cogan" style="width:100%">
+        <div class="w3-container">
+          <h3>Kevin Cogan</h3>
+          <p class="w3-opacity">Co-Founder</p>
+          <p>Experienced Team Lead with a demonstrated history of working in the non-profit organization management industry. Skilled in programming, marketing, English, and French. Strong information technology professional persuing a Bachelor of Science - BSc focused in Computer Science from Dublin City University. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kevin Bortas Section -->
+    <div class="w3-col l6 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="static/image/kevin_bortas.jpg" alt="Image of Kevin Bortas" style="width:100%">
+        <div class="w3-container">
+          <h3>Kevin Bortas</h3>
+          <p class="w3-opacity">Co-Founder</p>
+          <p>Experienced software developer with a demonstrated history working in the tech industry. Skilled in programming, problem solving, software architecture and design. Strong information technology professional with a Bachelor of Science - BSc focused in Computer Science from Dublin City University.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Social awareness is important to us so we take great pride in taking time out to look around us. </p>
+      <p>Creativity gives us the the ability to think outside the box helping us come up with Phaze solutions tools<br></p>
+      <p>Technical knowledge is essential to maintain and develop the engine that drives Phaze forward pushing the boundaries to further allieviate the problem of obesity.<br>
+    </div>
+
+    <!-- Progress-bars section -->
+    <div class="w3-col m6">
+
+      <!-- Social awareness part-->
+      <p class="w3-wide"><i class="fa fa-users w3-margin-right"></i>Social Awareness</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-blue w3-center" style="width:99%">99%</div>
+      </div>
+
+      <!-- Creativity part -->
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Creativity</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-blue w3-center" style="width:85%">85%</div>
+      </div>
+
+      <!-- Technical Knowledge part -->
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Technical Knowledge</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-blue w3-center" style="width:90%">90%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recruitment ending section -->
+  <div>
+    <p style="text-align: center ">We are always looking for new skills and people who are just as passionate about fitness as we are. Why not help us push the boundries and find your perfect job with us!</p>
+    <a href="https://forms.gle/HV26du9barKHyx3bA" class="w3-button w3-hover w3-blue" style=" margin-left: 42%; border-radius: 100px ">Join the team now</a>
+  </div>
+</div>
+
+<!-- Privacy Section -->
+<div class="w3-container" style="padding:128px 16px" id="privacy">
+  <h3 class="w3-center">Our Privacy Policy</h3>
+  <p class="w3-center w3-text-blue w3-large"></p>
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>You Control Your Data</h3>
+        <p>We want you to be able to have full control of your data with complete transparency. At Phaze we offer you just that.<p>
+        <p>Check out our privacy policy that re-enforces our promise to you.</p>
+        <a href="https://www.privacypolicies.com/live/1262b0a2-1e18-4c19-81f2-49d6c51b9f46" class="w3-button w3-hover w3-blue" style=" margin-left: 20%; border-radius: 100px ">Checkout our Privacy Policy</a>
+        <br><br>
+      </div>
+
+      <!-- Image for the privacy policy section -->
+      <div class="w3-col m6">
+        <img src="static/image/security.jpg" alt="Animated image representing security. On the image their is a larfe green sheild woth a lock. Around the sheild there are various bubbles with images such as a laptop, a WIFI signal, mobile and laptops, and a cloud with a finger-print on the cloud." style="width:100%">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-blue" style="padding:128px 16px" id="pricing">
+
+  <!-- Pricing Section header -->
+  <h3>PRICING</h3>
+  <!-- Pricing Section sub-heading -->
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+
+  <!-- All pricing plans -->
+  <div class="w3-row-padding" style="margin-top:64px">
+
+    <!-- Individual Pricing Plan -->
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-text-white w3-xlarge w3-padding-32" style="background-color: #343C7F">Individual <br>Plan<br></li>
+        <li class="w3-padding-16"><b>One</b> Person</li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction24()" onmouseleave="myFunction24()"><b> Endless</b> Support  <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="endless_support_individual"> Our dedicated support team will care for all problems that may arise.</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction25()" onmouseleave="myFunction25()"><b> One</b> User  <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="one_user_individual"> One user will have access to a personalised Phaze account</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction26()" onmouseleave="myFunction26()"><strong> Full</strong> Phaze Features <em class="material-icons" style="font-size:15px;color:darkgrey">info_outline</em><span class="popuptext" id="full_phaze_feature_individual"> You will have access to our personalised settings feature and assistive tools</span></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">Free</h2>
+          <span class="w3-opacity">Terms and conditions apply</span>
+        </li>
+
+        <!-- Sign up button -->
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://forms.gle/PFRJahhUExQzC5Qk7" class="w3-text-white w3-button w3-padding-large" style="background-color: #343C7F">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Educational Pricing Plan -->
+    <div class="w3-third w3 w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-text-white w3-xlarge w3-padding-32" style="background-color: #2753B6">Education System <br>Plan<br></li>
+        <li class="w3-padding-16"><b>One</b> Educational Institution</li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction23()" onmouseleave="myFunction23()"><b> Endless</b> Support  <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="endless_support_educational"> Our dedicated support team will care for all problems that may arise.</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction15()" onmouseleave="myFunction15()"><b> Unlimited</b> Users  <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="unlimited_users_educational"> All students and staff will have access to a personalised Phaze account</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction12()" onmouseleave="myFunction12()"><strong> Full</strong> Phaze Features <em class="material-icons" style="font-size:15px;color:darkgrey">info_outline</em><span class="popuptext" id="full_phaze_features_educational"> You will have access to our personalised settings feature and assistive tools</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction14()" onmouseleave="myFunction14()"><b>Free</b> Online Workshop <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="free_online_workshops_educational">Exclusive free access to our tutorials of how Phaze works and how to use it</span></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 450</h2>
+          <span class="w3-opacity">per year</span>
+        </li>
+
+        <!-- Sign up Button -->
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://forms.gle/PFRJahhUExQzC5Qk7" class="w3-text-white w3-button w3-padding-large" style="background-color: #2753B6">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Enterprise Plan -->
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-text-white w3-xlarge w3-padding-32" style="background-color: #1971BA">Enterprise <br>Plan<br></li>
+        <li class="w3-padding-16"><b>One</b> Company</li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction27()" onmouseleave="myFunction27()"><b> Endless</b> Support  <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="endless_support_enterprise"> Our dedicated support team will care for all problems that may arise.</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction21()" onmouseleave="myFunction21()"><b> Unlimited</b> Users  <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="unlimited_users_enterprise"> All students and staff will have access to a personalised Phaze account</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction20()" onmouseleave="myFunction20()"><b> Full</b> Phaze Features  <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="full_phaze_features_enterprise"> You will have access to our personalised settings feature and tools</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction22()" onmouseleave="myFunction22()"><b>Free</b> Online Workshop <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="free_online_workshops_enterprise">Exclusive free access to our tutorials of how Phaze works and how to use it</span></li>
+        <li class="popup w3-padding-16" onmouseenter="myFunction13()" onmouseleave="myFunction13()"><b>Receive</b> the latest features first <i class="material-icons" style="font-size:15px;color:darkgrey">info_outline</i><span class="popuptext" id="recieve_latest_enterprise"> The Phaze Team will make you get the new features first </span></li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">€ 700</h2>
+          <span class="w3-opacity">per year</span>
+        </li>
+
+        <!-- Sign Up Button -->
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://forms.gle/PFRJahhUExQzC5Qk7" class="w3-text-white w3-button w3-padding-large" style="background-color: #1971BA">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+
+  <!-- Contact Section header -->
+  <h3 class="w3-center">CONTACT</h3>
+
+  <!-- Contact Section sub-heading -->
+  <p class="w3-center w3-text-blue w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+
+    <!-- Contact Form -->
+      <form action="https://formspree.io/f/mbjpvrkk" method="POST" >
+        <div class="contact_container">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+          <textarea name="message" class="w3-input w3-border form-control" id="message" rows="6" placeholder="Message"></textarea>
+        </div>
+
+        <br>
+        <!-- Submit button -->
+        <div class="send_button">
+          <button class="w3-button w3-blue" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </div>
+      <br>
+    </form>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-64">
+
+  <!-- Back to the top button -->
+  <a href="#" class="w3-button w3-white w3-text-blue"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <!-- Social media buttons -->
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  </div>
+
+  <!-- Credits -->
+  <p>Powered by <a href="../../#home" title="W3.CSS" target="_blank" class="w3-hover-text-green">Phaze</a></p>
+</footer>
+
+
+<script>
+
+// Popup when the cusor hovers over 'Endless Support' in Individual Plan
+function myFunction24() {
+  var popup = document.getElementById("endless_support_individual");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'One User' in Individual Plan
+function myFunction25() {
+  var popup = document.getElementById("one_user_individual");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Full Phaze Features' in Individual Plan
+function myFunction26() {
+  var popup = document.getElementById("full_phaze_feature_individual");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Endless Support' in Education System Plan
+function myFunction23() {
+  var popup = document.getElementById("endless_support_educational");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Unlimited Users' in Educational System Plan
+function myFunction15() {
+  var popup = document.getElementById("unlimited_users_educational");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Full Phaze Feature' in Educational System Plan
+function myFunction12() {
+  var popup = document.getElementById("full_phaze_features_educational");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Free Online Workshop' in Educational System Plan
+function myFunction14() {
+  var popup = document.getElementById("free_online_workshops_educational");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Endless Support' in Enterprise Plan
+function myFunction27() {
+  var popup = document.getElementById("endless_support_enterprise");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Unlimited Users' in Enterprise Plan
+function myFunction21() {
+  var popup = document.getElementById("unlimited_users_enterprise");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Full Phaze Feature' in Enterprise Plan
+function myFunction20() {
+  var popup = document.getElementById("full_phaze_features_enterprise");
+  popup.classList.toggle("show");
+}
+
+// Popup when the cusor hovers over 'Free Online Workshop' in Enterprise Plan
+function myFunction22() {
+  var popup = document.getElementById("free_online_workshops_enterprise");
+  popup.classList.toggle("show");
+}
+
+// // Popup when the cusor hovers over 'Receive the latest features first' in Enterprise Plan
+function myFunction13() {
+  var popup = document.getElementById("recieve_latest_enterprise");
+  popup.classList.toggle("show");
+}
+
+
+//Design - Read more function
+  function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+//Passion - Read more function
+function myFunction1() {
+  var dots1 = document.getElementById("dots1");
+  var moreText1 = document.getElementById("more1");
+  var btnText1 = document.getElementById("myBtn1");
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btnText1.innerHTML = "Read more";
+    moreText1.style.display = "none";
+  } else {
+    dots1.style.display = "none";
+    btnText1.innerHTML = "Read less";
+    moreText1.style.display = "inline";
+  }
+}
+
+// Technology - Read more function
+function myFunction2() {
+  var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn2");
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more";
+    moreText2.style.display = "none";
+  }
+  else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less";
+    moreText2.style.display = "inline";
+  }
+}
+
+//Support - Read more function
+function myFunction3() {
+  var dots3 = document.getElementById("dots3");
+  var moreText3 = document.getElementById("more3");
+  var btnText3 = document.getElementById("myBtn3");
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btnText3.innerHTML = "Read more";
+    moreText3.style.display = "none";
+  }
+  else {
+    dots3.style.display = "none";
+    btnText3.innerHTML = "Read less";
+    moreText3.style.display = "inline";
+  }
+}
+
+
+// Slideshow backend
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length){
+    slideIndex = 1
+  }
+
+  if (n < 1){
+    slideIndex = x.length
+  }
+
+  for (i = 0; i < x.length; i++){
+    x[i].style.display = "none";
+  }
+
+  x[slideIndex-1].style.display = "block";
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

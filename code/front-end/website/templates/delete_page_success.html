@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Delete Account</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Style sheet for the W3css library -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> <!-- Style sheet for imported Google font 'Raleway' -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Style sheet for the the imported icons -->
+<link rel="stylesheet"  type = "text/css" href="../static/style/style.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Style sheet for the the imported icons from Google -->
+<style>
+
+/* Positions text input sections */
+.container1 {
+  padding-left: 33%;
+  clear: both;
+}
+
+</style>
+<body class="w3-content w3-white" style="max-width:100%;">
+<!-- Navbar on big screen -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-text-blue w3-card" id="myNavbar">
+
+    <!-- Left-sided navbar links -->
+    <a href="../../#home" class="w3-bar-item w3-button w3-hover-theme w3-wide">PHAZE</a>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../../#about" class="w3-bar-item w3-button w3-hover-theme1">ABOUT</a>
+      <a href="../../#team" class="w3-bar-item w3-button w3-hover-theme2"><i class="fa fa-user"></i> TEAM</a>
+      <a href="../../#privacy" class="w3-bar-item w3-button w3-hover-theme3"><i class="fa fa-lock"></i> PRIVACY</a>
+      <a href="../../#pricing" class="w3-bar-item w3-button w3-hover-theme4"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="../../#contact" class="w3-bar-item w3-button w3-hover-theme5"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="/web_register" class="w3-bar-item w3-button w3-hover-opacity w3-hover-blue
+      w3-hover-text-white w3-blue" style=""><i class="fa fa-user-plus"></i> SIGN UP</a>
+    </div>
+
+    <!-- Small screens will be replaced with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-blue w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar menu when the mwnu icon is clicked -->
+<nav class="w3-sidebar w3-bar-block w3-blue w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16 w3-hover-theme">Close ×</a>
+  <a href="../../#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme1">ABOUT</a>
+  <a href="../../#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme2"><i class="fa fa-user"></i> TEAM</a>
+  <a href="../../#privacy" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme3"><i class="fa fa-lock"></i> PRIVACY</a>
+  <a href="../../#pricing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme4"><i class="fa fa-usd"></i> PRICING</a>
+  <a href="../../#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme5"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="/web_register" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-theme5"><i class="fa fa-sign-in"></i> SIGN UP</a>
+</nav>
+
+
+</header>
+
+<!-- Delete Section -->
+<div class="w3-center w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+
+  <!-- Delete header -->
+  <h3 class="w3-center">Sorry to see you go :(</h3>
+  <
+  <!-- Delete sub-heading -->
+  <p class="w3-center w3-text-blue w3-large">Your account has been successfully deleted</p>
+  <div style="margin-top:48px">
+
+
+    <img src="static/image/water.jpg" class="w3-image" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-64">
+  <!-- Back to the top button -->
+  <a href=" " class="w3-button w3-white w3-text-blue"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <!-- Social media buttons -->
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+  </div>
+
+  <!-- Credit -->
+  <p>Powered by <a href="../../#home" title="W3.CSS" target="_blank" class="w3-hover-text-green">Phaze</a></p>
+</footer>
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
